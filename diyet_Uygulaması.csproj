@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B65E51C-8C83-49A5-A4E5-83DA66A5A8ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>diyet_Uygulaması</RootNamespace>
+    <AssemblyName>diyet_Uygulaması</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baglantiSınıf.cs" />
+    <Compile Include="BazalMetabolizma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BazalMetabolizma.Designer.cs">
+      <DependentUpon>BazalMetabolizma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BesinKalori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BesinKalori.Designer.cs">
+      <DependentUpon>BesinKalori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cryptology.cs" />
+    <Compile Include="FluentDesignForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FluentDesignForm1.Designer.cs">
+      <DependentUpon>FluentDesignForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GüncelleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GüncelleSil.Designer.cs">
+      <DependentUpon>GüncelleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitleİndeksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitleİndeksi.Designer.cs">
+      <DependentUpon>Kitleİndeksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mail Kontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mail Kontrol.Designer.cs">
+      <DependentUpon>Mail Kontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UyeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeEkle.Designer.cs">
+      <DependentUpon>UyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeleriGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeleriGoruntule.Designer.cs">
+      <DependentUpon>UyeleriGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniKayıt.Designer.cs">
+      <DependentUpon>YeniKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İdealKilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İdealKilo.Designer.cs">
+      <DependentUpon>İdealKilo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BazalMetabolizma.resx">
+      <DependentUpon>BazalMetabolizma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BesinKalori.resx">
+      <DependentUpon>BesinKalori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FluentDesignForm1.resx">
+      <DependentUpon>FluentDesignForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GüncelleSil.resx">
+      <DependentUpon>GüncelleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitleİndeksi.resx">
+      <DependentUpon>Kitleİndeksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mail Kontrol.resx">
+      <DependentUpon>Mail Kontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UyeEkle.resx">
+      <DependentUpon>UyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeleriGoruntule.resx">
+      <DependentUpon>UyeleriGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniKayıt.resx">
+      <DependentUpon>YeniKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İdealKilo.resx">
+      <DependentUpon>İdealKilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4SKA3GC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-40144_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KAYIT OL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KAYIT OL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KAYIT OL %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dietetics-gb170a81b8_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elma-saglik-kilo-diyet-obez.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-dietary-supplement-computer-icons-health-nutrition-health-food-text-rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-health-computer-icons-diet-health-love-heart-monochrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-dietary-supplement-computer-icons-diet-concept-5af5c077295dc6.1719391915260550311694.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20120708125701-36977c9d-me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-background-8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dietetics-gb170a81b8_19201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dietetics-gb170a81b8_19202.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ideal_weight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-nutrient-dietary-supplement-nutrition-ketogenic-diet-athlete-health-food-sport-nutrition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-fruit-vegetable-nutrition-food-health-food-s-food-nutrition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ideal_weight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kcal-icon-6.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
